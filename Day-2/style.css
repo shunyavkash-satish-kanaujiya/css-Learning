@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Exo 2", serif;
+  font-optical-sizing: auto;
+}
+header h1 {
+  text-align: center;
+  padding: 15px;
+  background-color: #025a8a;
+  color: white;
+}
+.hero-section {
+  display: flex;
+  background-image: url(./images/hero-poster.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  background-attachment: fixed;
+}
+
+.hero-container {
+  max-width: 500px;
+  color: white;
+  margin: auto;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.hero-container h2 {
+  font-size: 50px;
+}
+.hero-container p {
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+.hero-container a {
+  background-color: white;
+  color: #025a8a;
+  padding: 10px;
+  margin-top: 30px;
+  border-radius: 10px;
+  text-decoration: none;
+  text-align: center;
+}
+.movie-section {
+  background-color: #025a8a;
+}
+.movies-list {
+  padding: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.movie-card {
+  width: 300px;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 10px;
+  margin: 10px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 5px 10px 10px #888888;
+}
+.movie-card:hover {
+  transform: translateY(-20px);
+}
+.movie-card img {
+  width: 100%;
+  height: 160px;
+}
+.movie-card h3 {
+  margin-bottom: 10px;
+  text-align: center;
+  color: white;
+}
+.movie-card ul li {
+  color: white;
+}
+.bollywood ul li {
+  list-style-position: inside;
+  list-style-type: circle;
+}
+.hollywood ul li {
+  list-style-position: inside;
+  list-style-image: url(./images/smile.svg);
+}
+.tollywood ul li {
+  list-style-position: inside;
+  list-style-type: decimal-leading-zero;
+}
+@media (max-width: 530px) {
+  .movies-list {
+    padding: 30px;
+  }
+}
