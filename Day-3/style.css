@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500|Jost:400,500,600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(
+    to right top,
+    #d16ba5,
+    #c777b9,
+    #ba83ca,
+    #aa8fd8,
+    #9a9ae1,
+    #8aa7ec,
+    #79b3f4,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
+  font-family: "Jost", sans-serif;
+}
+.profile-card {
+  scroll-behavior: smooth;
+  padding: 4px 20px;
+  border: 1px solid #bbd0ff;
+  border-radius: 10px;
+  margin:150px auto;
+  max-width: 400px;
+  height: 600px;
+  background-color: rgba(255, 255, 255, 0.2);
+  overflow: auto;
+}
+
+.profile-card::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.profile-card::-webkit-scrollbar-track {
+  background: transparent; 
+  border-radius: 5px; 
+}
+.profile-card::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 5px; 
+}
+.profile-card::-webkit-scrollbar-thumb:hover {
+  background: #555; /
+}
+.profile-card::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #d16ba5, #69bff8); 
+  border: 2px solid #f1f1f1; 
+}
+.about{
+    border-bottom: 2px solid black;
+    
+}
+.profile-cover {
+  background-image: url(https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg);
+  width: 100%;
+  height: 180px;
+  background-repeat: no-repeat;
+  border-radius: 8px 8px 0 0;
+  background-size: cover;
+  position: relative;
+  cursor: pointer;
+}
+.profile-img {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  bottom: -65px;
+  left: 30%;
+  border: 5px solid rgba(255, 255, 255, 0.5);
+  transition: all 0.3s ease;
+}
+.profile-img:hover{
+    transform: scale(1.1);
+}
+
+.details{
+    margin-top: 80px;
+    margin-bottom: 15px;
+}
+.buttons{
+    margin: 0px auto;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+.btn1{
+     margin: 20px 0px;
+    background: #7ce3ff;
+    padding: 10px 25px;
+    border-radius: 3px;
+    border: 1px solid black;
+    font-weight: bold;
+    cursor: pointer;
+    color: #222;
+    transition: all 0.2s ease;
+}
+.btn1:hover{
+    background: transparent;  
+    border-color: #e7c6ff;     
+}
+.btn2{
+    margin: 20px 15px;
+    background: transparent;
+    padding: 10px 25px;
+    border-radius: 3px;
+    border: 1px solid #7ce3ff;
+    font-weight: bold;
+    cursor: pointer;
+    color: #222;
+    transition: all 0.2s ease;
+}
+.btn2:hover{
+    background-color: #b8c0ff;
+    border-color: #222;
+}
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.social-links a {
+  width: 20px;
+  margin: 10px 20px;
+  transition: all 0.3s ease;
+}
+.social-links a:hover{
+   transform: scale(1.3);
+}
+.footer-btn{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    bottom: 0;
+}
+.qualification{
+    margin-top: 30px;
+    border-bottom: 2px solid black;
+}
+.qualification-list{
+    margin-bottom: 30px;
+}
+.qualification h2{
+    margin-bottom: 10px;
+}
+.qualification-item ul li{
+    list-style-position: inside;
+    line-height: 2;
+}
+.card-contact{
+    display: flex;
+}
+.card-content h2{
+    margin: 30px 0px 20px;
+}
+.card-contact{
+    vertical-align: middle;
+    cursor: pointer;
+}
+.card-contact svg{
+    width: 30px;
+    min-height: 34px;
+    margin-right: 12px;
+    padding-right: 12px;
+    border-right: 1px solid #dfe2ec;
+}
+.card-contact-wrapper{
+    line-height:2.5;
+}
+.contact-me {
+    border: none;
+    background: linear-gradient(
+        to right,
+        rgba(83, 200, 239, 0.8) 0%,
+        rgba(81, 106, 204, 0.8) 96%
+        );
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+        color: #fff;
+        padding: 12px 16px;
+        width: 100%;
+        border-radius: 5px;
+        margin-top: 25px;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .contact-me:hover {
+        background: linear-gradient(
+            to right,
+    rgb(15, 111, 143) 0%,
+    rgba(81, 106, 204, 1) 96%
+    );
+}
+.footer-btn{
+    margin-top: 30px;
+max-width: 400px;
+}
+.footer-btn a{
+        background: #7ce3ff;
+        text-decoration: none;
+        padding: 10px 25px;
+        border-radius: 3px;
+        border: 1px solid black;
+        font-weight: bold;
+        cursor: pointer;
+        color: #222;
+        transition: all 0.2s ease;
+    }
+.footer-btn a:hover{
+        border-color: #41dfff;
+        background-color: white   ;
+    }
+
+ 
+/* MEDIA--------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+@media (max-width: 425px) {
+    .profile-card {
+    max-width: 90%;
+    height: auto;
+  }
+
+  .profile-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .footer-btn {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+  .btn1{
+    margin-bottom: 0;
+  }
+  .btn2{
+   margin: 20px 0px;
+  }
+
+  .footer-btn a {
+    padding: 10px;
+    text-align: center;
+  }
+  .social-links a {
+    margin: 5px 10px;
+  }
+
+  .btn1, .btn2 {
+    padding: 8px 20px;
+  }
+
+  .contact-me {
+    font-size: 12px;
+    padding: 10px;
+  }
+}
