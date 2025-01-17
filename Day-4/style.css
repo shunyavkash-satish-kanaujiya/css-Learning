@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", Arial, sans-serif;
+}
+.container {
+  max-width: 1320px;
+  margin: auto;
+}
+.header-row {
+  max-width: 1320px;
+  position: absolute;
+  width: 100%;
+}
+.navbar {
+  margin: 30px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo a {
+  text-decoration: none;
+  color: black;
+}
+.logo h2 {
+  font-size: 24px;
+  font-size: 30px;
+  color: white;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  color: white;
+  list-style: none;
+  margin: 0px 30px;
+}
+
+/* HERO SECTION------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+.hero-section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/bg_1.jpg.webp);
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+  z-index: -1;
+}
+
+.hero-content {
+  line-height: 1.5;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.hero-content p {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.hero-content h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 80px;
+  color: white;
+}
+.hero-btn {
+  margin-top: 30px;
+}
+.button {
+  padding: 19px 40px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.btn-primary {
+  background: #c5a880;
+  border: 1px solid #c5a880;
+  color: #fff;
+}
+.btn-secondary {
+  border: 1px solid white;
+  background: transparent;
+  color: #fff;
+}
+
+/* BOOKING-DETAILS----------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.booking-row {
+  position: relative;
+  bottom: 85px;
+}
+.booking-details {
+  display: flex;
+  justify-content: center;
+}
+.details-div {
+  padding: 58px 34px;
+  background-color: #343a40;
+}
+.form-group {
+  padding: 0px 24px;
+}
+.form-group p {
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+.check-btn {
+  background-color: #c5a880;
+}
+.check-btn a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+}
+.details-div input,
+select {
+  font-size: 16px;
+  color: #ffffff66;
+  background-color: transparent;
+  padding: 5px;
+}
+
+/* ABOUT-US-------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.about-row {
+  display: flex;
+}
+.about-left {
+  display: flex;
+}
+.about-card {
+  max-width: 300px;
+
+  margin: 30px 0px;
+}
+
+.about-card img {
+  max-width: 300px;
+  max-height: 230px;
+}
+.card {
+  text-align: center;
+  padding: 40px 25px;
+  box-shadow: 0px 5px 25px -2px rgba(0, 0, 0, 0.09);
+}
+.card a i {
+  color: #c5a880;
+  font-size: 50px;
+}
+.card h3 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0px;
+  color: #000000cc;
+  letter-spacing: 1px;
+}
+.card p {
+  font-size: 16px;
+  margin: 16px 0px;
+  letter-spacing: 0.5px;
+  color: #999;
+}
+.about-left {
+  gap: 30px;
+}
+.about-right {
+  display: flex;
+
+  align-items: center;
+  margin-left: 30px;
+}
+.about-content h5 {
+  font-size: 15px;
+  color: #c5a880;
+  margin-bottom: 20px;
+}
+.about-content h2 {
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  font-family: "Courier New", Courier, monospace;
+}
+.about-content p {
+  font-size: 18px;
+  color: #999;
+  margin: 0px 0px 48px;
+  line-height: 1.5;
+}
+.book-btn {
+  padding: 16px 24px;
+}
