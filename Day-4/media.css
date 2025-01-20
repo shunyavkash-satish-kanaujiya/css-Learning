@@ -1,0 +1,25 @@
+@media (max-width: 1024px) {
+  .header-tab {
+    display: none;
+  }
+  nav ul li a {
+    display: block;
+  }
+  .about-row {
+    flex-direction: column;
+  }
+  .about-left {
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .about-left {
+    flex-direction: column;
+  }
+  .about-card {
+    max-width: 100%;
+  }
+  .about-card img {
+    width: 100%;
+  }
+}
