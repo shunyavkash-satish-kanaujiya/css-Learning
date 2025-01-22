@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  height: 100vh;
+}
+.item {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.home {
+  background-color: #323230;
+  color: white;
+  padding: 20px 40px;
+}
+.home nav a {
+  text-decoration: none;
+  color: #ccc;
+  font-weight: 100;
+  font-size: 13px;
+  margin-right: 20px;
+}
+.detail h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.detail p {
+  font-size: 14px;
+  color: #ccc;
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+.home-footer {
+  align-self: end;
+}
+.about-img {
+  overflow: hidden;
+}
+.about-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
+}
+.about-img img:hover {
+  transform: scale(1.1);
+}
+.about-description {
+  background-color: rgb(241, 232, 221);
+  padding: 20px;
+  display: grid;
+  align-content: center;
+}
+.about-description h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.about-description p {
+  font-size: 15px;
+  color: rgb(35, 34, 34);
+}
+.photo-description {
+  background-color: rgb(241, 232, 221);
+  padding: 20px;
+  display: grid;
+  align-content: center;
+}
+.photo-description h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.photo-description p {
+  font-size: 15px;
+  color: rgb(35, 34, 34);
+}
+.photography-img {
+  overflow: hidden;
+}
+.photography-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
+}
+.photography-img img:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive */
+
+@media (max-width: 1024px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .detail p {
+    font-size: 10px;
+  }
+  .home-footer {
+    font-size: 10px;
+  }
+  .about {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+  .photography {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 673px) {
+  .about {
+    grid-template-columns: 1fr;
+    border-bottom: 1px solid black;
+  }
+  .about-img img {
+    object-position: 10%;
+  }
+  .about-description h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .about-description p {
+    font-size: 11px;
+  }
+  .photography {
+    grid-template-columns: 1fr;
+  }
+  .photo-description h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .photo-description p {
+    font-size: 11px;
+  }
+}
+@media (max-width: 425px) {
+  .detail p {
+    font-size: 8px;
+  }
+  .detail h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+}
